@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please credit its author."
+title: "Akeju Workspace Auditor"
+abstract: "Read-only Google Workspace security audit."
+type: software
+authors:
+  - family-names: Akeju
+    given-names: Adekunle
+repository-code: "https://github.com/thiskunle/akeju-workspace-auditor"
+license: AGPL-3.0-or-later
+date-released: 2026-11-08

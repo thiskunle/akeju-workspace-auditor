@@ -1,0 +1,28 @@
+# Copyright (c) 2026 Adekunle Akeju. All rights reserved except as licensed.
+# Akeju Workspace Auditor, created by Adekunle Akeju. SPDX-License-Identifier: AGPL-3.0-or-later
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akeju-workspace-auditor"
+version = "0.1.0"
+description = "Read-only Google Workspace security audit, by Adekunle Akeju."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Adekunle Akeju" }]
+dependencies = ["google-api-python-client>=2.140", "google-auth>=2.30", "google-auth-httplib2>=0.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+akeju-workspace-audit = "akeju_workspace_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
